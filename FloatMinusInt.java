@@ -6,7 +6,9 @@ public class FloatMinusInt {
         return implicit;
     }
     public int subtractIntFromDoubleAndReturnInt(double floating, int integer) {
+        String f = "works";
         int explicit = (int)floating - integer;
         return explicit;
+        
 }
 }
