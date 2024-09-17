@@ -18,7 +18,7 @@ public class BasicCalc {
             if (b != 0) {
                 return a % b;
             } else {
-            return a % b;
+            return 0;
             }
         } else {
             return 0;
