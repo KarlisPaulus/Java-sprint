@@ -4,7 +4,9 @@ public class DigitSum {
     public static int sumOfDigits(int number) {
         int result = 0;
 
-        String strNumbers = String.valueOf(number); // "1234"
+        String strNumbers = String.valueOf(number); // "1234" or "-1234"
+        
+        // Negative case control
         char charNumber = strNumbers.charAt(0);
         if (charNumber == '-') {
             result = 1;
