@@ -4,11 +4,12 @@ public class CharCounter {
     public int countOccurrences(String input, char target) {
         int timesTarget = 0;
         int sum = 0;
-        char targetChar = target;
+        char targetChar = Character.toLowerCase(target);    // convert string and char dif because char is primitive type
+        String strInput = input.toLowerCase();  // string is non-static?
         
 
-        for (int i = 0; i < input.length(); i++) {
-            char inputSplitter = input.charAt(i);
+        for (int i = 0; i < strInput.length(); i++) {
+            char inputSplitter = strInput.charAt(i);
 
             if (inputSplitter == targetChar) {
                 sum += 1;
