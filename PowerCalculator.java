@@ -5,7 +5,7 @@ public class PowerCalculator {
         int sum = 0;
         int times = 0;
         if (exponent == 0) {
-            exponent = 1;
+            return 1;
         } /*else if (exponent < 0) {
             Math.pow(base, exponent);
         }*/
