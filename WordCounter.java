@@ -3,25 +3,21 @@ package sprint;
 public class WordCounter {
     public int countWords(String sentence) {    // Hello World!
         
-        //sentence.toCharArray();
             int wordCount = 0;
+            boolean isWord = false;
         for (int i = 0; i < sentence.length(); i++) {
-            if (!Character.isLetter(sentence.charAt(i))) {
-                if (Character.isSpaceChar(i)) {
-                    break;
-                } else {
-                wordCount += 1;
-                }
+            //char currentchar = sentence.charAt(i)
+            if (Character.isLetter(sentence.charAt(i))) {
+                isWord = true;
+            }
+            if (Character.isWhitespace(sentence.charAt(i)) && isWord) {
+                    wordCount ++;
+                    isWord = false;
+                 }
             } 
-            
-                /*for (int n = i; Character.isLetter(sentence.charAt(i)); i++) {
-                    break;
-                }
-                wordCount += 1;*/
-            //else if  (Character.isWhitespace(i))
-            
-            
+            if (isWord) {
+                wordCount++;
+            }
+            return wordCount;
         }
-        return wordCount;
     }
-}
