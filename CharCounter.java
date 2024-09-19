@@ -8,7 +8,7 @@ public class CharCounter {
         String strInput = input.toLowerCase();  // string is non-static?
         
 
-        for (int i = 0; i < strInput.length(); i++) {
+        for (int i = 0; i < strInput.length(); i++) {   // using same logic as DigitSum
             char inputSplitter = strInput.charAt(i);
 
             if (inputSplitter == targetChar) {
