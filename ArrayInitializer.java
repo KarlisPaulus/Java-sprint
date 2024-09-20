@@ -9,7 +9,7 @@ public class ArrayInitializer {
         
         int[] array = new int[max];
         for (int i = 0; i < array.length; i++) {
-            array[i] += i;
+            array[i] += i + 1;
         }
         return array;
     }
