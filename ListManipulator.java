@@ -7,7 +7,7 @@ public class ListManipulator {
         if (list.size() == 1) {
             list.set(0, "first");
         } else if (list.isEmpty()) {
-            list.add("1");
+            list.add("first");
         } else {
             list.removeLast(); // Arraylist size automatically extends. Array doesn't
             int last = list.size() - 1;
