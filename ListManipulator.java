@@ -1,10 +1,12 @@
 package sprint;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListManipulator {
     public List<String> manipulateList(List<String> list) {
         if (list.isEmpty()) {
+            list = new ArrayList<String>();
             return list;
         }
         list.removeLast(); // Arraylist size automatically extends. Array doesn't
