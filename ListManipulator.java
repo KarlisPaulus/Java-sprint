@@ -7,7 +7,7 @@ import java.util.List;
 public class ListManipulator {
     public List<String> manipulateList(List<String> list) {
         if (list.isEmpty()) {
-            list.set(0, "1q");
+            list.set(0, "1");
             return list;
         } else {
             list.removeLast(); // Arraylist size automatically extends. Array doesn't
