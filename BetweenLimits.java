@@ -1,7 +1,6 @@
 package sprint;
 
 public class BetweenLimits {
-    private char[] range;
 
     public String findRange(char from, char to) {
         
