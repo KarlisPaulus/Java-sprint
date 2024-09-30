@@ -4,18 +4,28 @@ import java.util.ArrayList;
 public class Combinations {
     public ArrayList<String> combN(int n) {
 
-        ArrayList <String> intResult = new ArrayList<String>();
-        if (n <= 0) {
-            return intResult;
+        ArrayList<String> result = new ArrayList<>();   //Arraylist for result storing
+
+        if (n <= 0) {  
+            return result;
         }
-        for (int i = 0; i < 8; i++) {
-            for (int j = i+1; j < 9; j++) {
-                for (int k = j+1; k < 10; k++) {
-                     String result = String.format("%d%d%d",i, j, k);
-                     intResult.add(result);
-                }
+
+        generateCombinations(n, 0, "", result); // recursive helper method
+
+        return result;
+
+        
             }
+            private void generateCombinations(int n, int start, String current, ArrayList<String> result) {
+
+                if (current.length() == n) {
+                    result.add(current);
+                    return;
         }
-        return intResult;
+
+        for(int i = start; i <=9; i++) {    // "0", "01", after "012" recursive call ends and method backtracks to the previous call "01", "013"
+            generateCombinations(n, i + 1, current + i, result);
+        }
+
     }
 }
