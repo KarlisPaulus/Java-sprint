@@ -5,7 +5,7 @@ public class Combinations {
     public ArrayList<String> combN(int n) {
 
         ArrayList <String> intResult = new ArrayList<String>();
-        if (n > 0) {
+        if (n <= 0) {
             return intResult;
         }
         for (int i = 0; i < 8; i++) {
