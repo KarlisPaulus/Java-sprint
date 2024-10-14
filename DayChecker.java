@@ -11,7 +11,16 @@ public class DayChecker {
         String result;
 
        switch (intDay) {
-        case 1, 2, 4, 5: 
+        case 1: 
+            result = "Weekday";
+            break;
+        case 2: 
+            result = "Weekday";
+            break;
+        case 4: 
+            result = "Weekday";
+            break;
+        case 5: 
             result = "Weekday";
             break;
         case 3:
