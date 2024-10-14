@@ -26,7 +26,10 @@ public class DayChecker {
         case 3:
             result = "Hump Day!";
             break;
-        case 6, 7:
+        case 6:
+            result = "Weekend";
+            break;
+        case 7:
             result = "Weekend";
             break;
         default:
