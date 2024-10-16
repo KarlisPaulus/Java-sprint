@@ -18,7 +18,7 @@ public class WeekendCalculator {
                 result += 1;
             } else if (day == 7) {
                 result += 1;
-                day = 0;
+                day = 1;
                 times += 1;
             }
         }
