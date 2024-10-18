@@ -9,7 +9,7 @@ public class GCDRecursive {
             num1 = num1* -1;
         }
 
-        if (num2 <= 1) {
+        if (num2 == 0) {
             return num1;
         } 
        
