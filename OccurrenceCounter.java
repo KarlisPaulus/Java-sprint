@@ -6,6 +6,9 @@ public class OccurrenceCounter {
         if (arr == null) {
             return 0;
         }
+        if (index < 0) {
+            return 0;
+        }
         return countOccurrencesHelper(arr, element, index);
     }
     private int countOccurrencesHelper (int[] arr, int element, int index) {
